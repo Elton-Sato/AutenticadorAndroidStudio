@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "468573998828",
+    "project_id": "autenticador06032025",
+    "storage_bucket": "autenticador06032025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468573998828:android:58b43c9a594944b87a1fc9",
+        "android_client_info": {
+          "package_name": "com.example.autenticador"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBIwJXFRmhPr6oYquoCToR047yeaHN66k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
