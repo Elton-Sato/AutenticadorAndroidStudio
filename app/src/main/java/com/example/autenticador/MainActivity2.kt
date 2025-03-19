@@ -24,6 +24,7 @@ class MainActivity2 : AppCompatActivity() {
         val uid = intent.getStringExtra("usernameKey")
         val textoTela = findViewById<TextView>(R.id.textoTV)
         val botaoVoltar = findViewById<Button>(R.id.voltar)
+        val botaoReset = findViewById<Button>(R.id.reset)
         val botaoContador = findViewById<Button>(R.id.contador)
         var contagem = 0
 
@@ -36,9 +37,15 @@ class MainActivity2 : AppCompatActivity() {
 
         }
 
+        botaoReset.setOnClickListener{
+
+            textoTela.setText("Olá Mundo!")
+        }
+
         botaoContador.setOnClickListener {
             contagem++
             textoTela.setText(contagem.toString())
         }
     }
+
 }
