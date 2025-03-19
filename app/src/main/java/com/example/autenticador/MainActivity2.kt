@@ -24,16 +24,21 @@ class MainActivity2 : AppCompatActivity() {
         val uid = intent.getStringExtra("usernameKey")
         val textoTela = findViewById<TextView>(R.id.textoTV)
         val botaoVoltar = findViewById<Button>(R.id.voltar)
+        val botaoContador = findViewById<Button>(R.id.contador)
+        var contagem = 0
 
         textoTela.setText(uid.toString())
 
-        botaoVoltar.setOnClickListener{
+        botaoVoltar.setOnClickListener {
 
             val intent = Intent(this@MainActivity2, MainActivity::class.java)
             startActivity(intent)
 
         }
 
+        botaoContador.setOnClickListener {
+            contagem++
+            textoTela.setText(contagem.toString())
+        }
     }
-
 }
