@@ -39,6 +39,8 @@ class MainActivity2 : AppCompatActivity() {
 
         botaoReset.setOnClickListener{
 
+            contagem = 0
+
             textoTela.setText("Olá Mundo!")
         }
 
